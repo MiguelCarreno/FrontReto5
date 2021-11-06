@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alquiler de Biciletas</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="misestilos.css">
+  <link rel="stylesheet" href="menu2.css">
+  <link rel="stylesheet" href="menu.css">
+  <script type="text/javascript" src="js/misFuncionesBikes.js"></script>
+
+
+<body>
+  <h1 style="font-family: monospace; font-size: 40px;"> ALQUILER DE BICICLETAS</h1>
+
+  <nav>
+    <a href="index.html">Categoria</a>
+    <a href="Bicicileta.html">Bicicleta</a>
+    <a href="Cliente.html">Cliente</a>
+    <a href="Mensaje.html">Mensajes</a>
+    <a href="Reservaciones.html">Reservación</a>
+    <a href="Reportes.html">Reportes</a>
+    <div class="animation start-home"></div>
+  </nav>
+
+  <main>
+
+
+    <h1 style="background-color:rgb(1, 6, 17); font-family: Copperplate Gothic; font-size: 38px;">Bicicletas</h1>
+
+
+    <div1>
+      <form action="/action_page.php">
+        <label for="name2 ">Nombre:</label>
+        <input type="text" type="text" id="name2" placeholder="Nombre">
+
+        <label for="brand ">Marca:</label>
+        <input type="text" type="text" id="brand" placeholder="Marca">
+
+        <label for="year ">Año:</label>
+        <input type="number" type="number" id="year" placeholder="Año">
+
+
+        <label for="description2">Descripción:</label>
+        <input type="text" id="description2" placeholder="Descripción">
+
+        <label>Selecciona la categoria:</label>
+        <select id="select-category"> 
+        <option selected disabled hidden style='display: none' value=''></option>
+        </select>
+        <script type="text/javascript">
+          window.onload = autoInicioCategoria();
+        </script>
+
+
+      </form>
+    </div1>
+
+    <br>
+    <button class="btn" onclick="traerInformacionBicicleta()"> Consultar Bicicletas</button>
+    <button class="btn" onclick="agregarBicicleta()">Guardar Bicicleta</button>
+    <div id="miListaBike"></div>
+    <br>
+
+    <!--Estilo de la Tabla-->
+
+    <style>
+      table,
+      th{
+        color: rgb(255, 255, 255);
+        background-color: #11b392;
+        border:  1px solid #ffffff;
+        margin: 20px 0;
+        font-size: 1.20em;
+        min-width: 110px;
+        }
+      td {
+        color: rgba(8, 8, 8, 0.7);
+  
+        margin-top: -150px;
+        margin-left: -1px;/*50% del ancho */
+        text-align: center;
+      /*  border: 3px solid #cad1df;*/
+        border-collapse: collapse;
+        margin: 30px 0;
+        font-size: 1.20em;
+        font-family: 'Lato', sans-serif;
+        min-width: 100px;
+        box-shadow: 0 0 0px rgb(151, 19, 19);
+        padding: 10px 12px;
+      /*  border-bottom: 3px solid #cce4e1; /*color bordes horizontales*/
+        background-color: #fbfdfb;
+      }
+    </style>
+
+
+
+
+
+    </head>
+</body>
+
+</html>

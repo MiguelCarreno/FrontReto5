@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alquiler de Biciletas</title>
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="misestilos.css">
+  <link rel="stylesheet" href="menu2.css">
+  <link rel="stylesheet" href="menu.css">
+
+  <script type="text/javascript" src="js/misFuncionesMensajes.js"></script>
+
+
+  <h1 style="font-family: monospace; font-size: 40px;"> ALQUILER DE BICICLETAS</h1>
+
+
+  <nav>
+    <a href="index.html">Categoria</a>
+    <a href="Bicicileta.html">Bicicleta</a>
+    <a href="Cliente.html">Cliente</a>
+    <a href="Mensaje.html">Mensajes</a>
+    <a href="Reservaciones.html">Reservación</a>
+    <a href="Reportes.html">Reportes</a>
+    <div class="animation start-home"></div>
+  </nav>
+</head>
+
+<body>
+
+
+
+  <br>
+  <br>
+
+  <main>
+
+
+    <h1 style="background-color:rgb(3, 1, 17); font-family: Copperplate Gothic; font-size: 38px;">Mensajes</h1>
+
+
+    <div1>
+      <form action="/action_page.php">
+        <label for="messagetext ">Mensaje:</label>
+        <input type="text" id="messagetext" placeholder="Mensaje">
+
+        <label>Selecciona el cliente:</label>
+        <select id="select-client">
+          <option selected disabled hidden style='display: none' value=''></option>
+        </select>
+
+        <script type="text/javascript">
+          window.onload = autoInicioRelacionCliente();
+        </script>
+
+        <label>Selecciona la Bicicleta:</label>
+        <select id="select-bike">
+          <option selected disabled hidden style='display: none' value=''></option>
+        </select>
+
+        <script type="text/javascript">
+          window.onload = autoInicioBike();
+        </script>
+
+
+      </form>
+    </div1>
+
+
+
+    <br>
+    <button class="btn" onclick="autoInicioMensajes()"> Consultar Mensajes</button>
+    <button class="btn" onclick="guardarInformacionMensajes()">Guardar Mensaje</button>
+    <div id="resultadoMensajes"></div>
+
+
+    <!--Estilo de la Tabla-->
+    <style>
+      table,
+      th{
+        color: rgb(255, 255, 255);
+        background-color:#11b392;
+        border:  1px solid #ffffff;
+        margin: 20px 0;
+        font-size: 1.20em;
+        min-width: 110px;
+      }
+      td {
+        color: rgba(8, 8, 8, 0.7);
+  
+        margin-top: -150px;
+        margin-left: -1px;/*50% del ancho */
+        text-align: center;
+      /*  border: 3px solid #cad1df;*/
+        border-collapse: collapse;
+        margin: 30px 0;
+        font-size: 1.20em;
+        font-family: 'Lato', sans-serif;
+        min-width: 150px;
+        box-shadow: 0 0 0px rgb(151, 19, 19);
+        padding: 10px 12px;
+      /*  border-bottom: 3px solid #cce4e1; /*color bordes horizontales*/
+        background-color: #fbfcfd;
+      }
+    </style>
+
+
+
+</body>
+
+
+</html>

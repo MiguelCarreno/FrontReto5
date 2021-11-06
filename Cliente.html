@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alquiler de Bicicletas</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="misestilos.css">
+  <link rel="stylesheet" href="menu2.css">
+  <link rel="stylesheet" href="menu.css">
+  <script type="text/javascript" src="js/misFuncionesClientes.js"></script>
+</head>
+
+<body>
+
+
+  <h1 style="font-family: monospace; font-size: 40px;"> ALQUILER DE BICICLETAS</h1>
+
+  <nav>
+    <a href="index.html">Categoria</a>
+    <a href="Bicicileta.html">Bicicleta</a>
+    <a href="Cliente.html">Cliente</a>
+    <a href="Mensaje.html">Mensajes</a>
+    <a href="Reservaciones.html">Reservación</a>
+    <a href="Reportes.html">Reportes</a>
+    <div class="animation start-home"></div>
+  </nav>
+
+
+  <br>
+  <br>
+  <body>
+  <main>
+
+
+    <h1 style="background-color:rgb(3, 1, 17); font-family: Copperplate Gothic; font-size: 38px;">Cliente</h1>
+
+
+    <div1>
+      <form action="/action_page.php">
+        <label for="Clemail">Email:</label>
+        <input type="text" id="Clemail" placeholder="Correo">
+
+        <label for="Clpassword">Contraseña:</label>
+        <input type="text" id="Clpassword" placeholder="Contraseña">
+
+        <label for="Clname">Nombre:</label>
+        <input type="text" id="Clname" placeholder="Nombre">
+
+        <label for="year ">Año:</label>
+        <input type="number" type="number" id="year" placeholder="Año">
+
+
+        <label for="Clage">Edad:</label>
+        <input type="number" id="Clage" placeholder="Edad">
+      </form>
+    </div1>
+
+
+
+    <br>
+    <button class="btn" onclick="autoInicioCliente()"> Consultar Cliente</button>
+    <button class="btn" onclick="guardarInformacionCliente()">Guardar Cliente</button>
+    <div id="resultado3"></div>
+    <br>
+    <br>
+
+    <!--Estilo de la Tabla-->
+
+    <style>
+      table,
+      th{
+        color: rgb(255, 255, 255);
+        background-color:#11b392;
+        border:  1px solid #ffffff;
+        margin: 20px 0;
+        font-size: 1.20em;
+        min-width: 100px;
+      }
+      td {
+        color: rgba(8, 8, 8, 0.7);
+  
+        margin-top: -150px;
+        margin-left: -1px;/*50% del ancho */
+        text-align: center;
+      /*  border: 3px solid #cad1df;*/
+        border-collapse: collapse;
+        margin: 30px 0;
+        font-size: 1.20em;
+        font-family: 'Lato', sans-serif;
+        min-width: 125px;
+        box-shadow: 0 0 0px rgb(151, 19, 19);
+        padding: 10px 12px;
+      /*  border-bottom: 3px solid #cce4e1; /*color bordes horizontales*/
+        background-color: #fbfcfd;
+      }
+    </style>
+
+
+</body>
+
+</html>

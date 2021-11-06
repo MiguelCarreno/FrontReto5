@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Alquiler de Bicicletas</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Este es un documento HTML5">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="misestilos.css">
+  <link rel="stylesheet" href="menu2.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="estilos.css">
+
+  <script type="text/javascript" src="js/misFuncionesCategorias.js"></script>
+
+
+
+  <h1 style="font-family: monospace; font-size: 40px;"> ALQUILER DE BICICLETAS</h1>
+
+  <nav>
+    <a href="index.html">Categoria</a>
+    <a href="Bicicileta.html">Bicicleta</a>
+    <a href="Cliente.html">Cliente</a>
+    <a href="Mensaje.html">Mensajes</a>
+    <a href="Reservaciones.html">Reservación</a>
+    <a href="Reportes.html">Reportes</a>
+    <div class="animation start-home"></div>
+  </nav>
+</head>
+
+<body>
+
+
+  <main>
+
+
+    <h1 style="background-color: #040c14 ; font-family: Copperplate Gothic; font-size: 38px;">Categoria</h1>
+
+
+    <div1>
+      <form action="/action_page.php">
+        <label for="Cname ">Nombre:</label>
+        <input type="text" id="Cname" name="firstname" placeholder="Nombre">
+
+        <label for="Cdescription">Descripción:</label>
+        <input type="text" id="Cdescription" name="lastname" placeholder="Descripción">
+
+
+      </form>
+    </div1>
+
+
+
+    <br>
+    <button class="btn" onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+    <button class="btn" onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+    <div id="resultado1"></div>
+
+  </main>
+
+  <!--Estilo de la Tabla-->
+  <style>
+    table,
+    th{
+      color: rgb(255, 255, 255);
+      background-color:#11b392;
+      border:  1px solid #ffffff;
+      margin: 20px 0;
+      font-size: 1.20em;
+    }
+    td {
+      color: rgba(8, 8, 8, 0.7);
+
+      margin-top: -150px;
+      margin-left: -1px;/*50% del ancho */
+      text-align: center;
+    /*  border: 3px solid #cad1df;*/
+     
+      margin: 30px 0;
+      font-size: 1.20em;
+      font-family: 'Lato', sans-serif;
+      min-width: 190px;
+      box-shadow: 0 0 0px rgb(151, 19, 19);
+      padding: 10px 12px;
+    border-right: 1px  #11b392; /*color bordes horizontales*/
+      background-color: #fbfcfd;
+    }
+  </style>
+
+
+</body>
+
+
+</html>
